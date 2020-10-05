@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+	<title>BMI Calc</title>
+	<link rel="stylesheet" type="text/css" href="bmi.css">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body style="background-color: #8a8a8adb">
+	<h1 class="text-center title">BMI CALCULATOR</h1>
+	<img class="left-img" src="./images/left.svg" alt="left-img">
+	<img class="right-img" src="./images/right.svg" alt="right-img">
+	<div class="card">
+		<div class="row">
+			<div class="col">
+				<form name="bmiForm">
+					<h1>Weight(kg): 
+					<input class="wti" type="text" name="weight" size="15"><br /></h1>
+					<h1>Your Height(cm):
+					<input class="hei" type="text" name="height" size="15"><br /> </h1>
+					<input class="btn calc" type="button" value="Calculate BMI" onClick="calculateBmi()"><br />
+					<h1>Your BMI: 
+					<input class="bmi" type="text" name="bmi" size="15"><br /> </h1>
+					<h1>This Means: 
+					<input class="means" type="text" name="meaning" size="15"><br /> </h1>
+					<input class="btn reset" type="reset" value="Reset" />
+				</form>
+			</div>
+			<div class="col">
+				<div class="right">
+					<p class="text-center mt-3">BMI Weight Range</p>
+					<p class="p">Less Than 18.5 = Underweight</p>
+					<p class="p">Between 18.5 - 24.9 = Healthy Weight</p>
+					<p class="p">Between 25 - 29.9 = Overweight</p>
+					<p class="p">Over 30 = Obese</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="./bmi.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</html>
